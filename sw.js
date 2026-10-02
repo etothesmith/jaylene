@@ -6,9 +6,9 @@ self.addEventListener("activate", (e) => e.waitUntil(self.clients.claim()));
 
 self.addEventListener("push", (event) => {
   let data = {};
-  try { data = event.data ? event.data.json() : {}; } catch { data = { title: "Attendance App", body: event.data?.text() }; }
+  try { data = event.data ? event.data.json() : {}; } catch { data = { title: "Truant Detector", body: event.data?.text() }; }
   event.waitUntil(
-    self.registration.showNotification(data.title || "Attendance App", {
+    self.registration.showNotification(data.title || "Truant Detector", {
       body: data.body || "",
       tag: data.tag,
       renotify: true,

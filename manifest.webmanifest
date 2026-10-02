@@ -1,6 +1,6 @@
 {
-  "name": "Attendance App",
-  "short_name": "Attendance",
+  "name": "Truant Detector",
+  "short_name": "Truant Detector",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#0a0a0a",
